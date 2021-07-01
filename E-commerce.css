@@ -63,6 +63,7 @@ header .header-2 {
   padding: 1.5rem;
   width: 97%;
   z-index: 1000;
+  position: fixed;
 }
 
 header .header-1 .logo {
@@ -164,6 +165,7 @@ header .header-2.header-active{
     height: 100vh;
     object-fit: cover;
     width: 100%;
+    
 }
 .home .home-slider .item .content{
     position: absolute;
