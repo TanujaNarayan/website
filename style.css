@@ -1,0 +1,233 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS VARIABLE*/
+
+
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 152%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/*navigation bar logo and image*/
+#logo{
+    margin: 12px 40px;
+
+}
+#logo img{
+    height: 75px;
+    margin: 3px 6px;
+    border-radius: 40px;
+}
+
+
+/*navigation bar: list styling*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+
+
+#navbar ul li{
+  
+    list-style: none;
+    font-size: 1.4rem;
+}
+#navbar ul li a{
+    color: rgb(87, 205, 252);
+    display: block;
+    padding: 3px 34px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ #navbar ul li a:hover{
+    color:black;
+   background-color: white;
+ }
+
+ /*home section*/
+ #home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+     height: 600px;
+ }
+ #home::before{
+    content: "";
+    position: absolute;
+    background-image: url(./delbck.webp);
+    background-size:cover;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+ }
+
+ #home h1{
+     color: white;
+     text-align: center;
+ }
+
+ #home p{
+    color: white;
+     text-align: center;
+     font:1.5rem ;
+     font-family: 'bree Serif',serif;
+ }
+
+
+ /*services section*/
+#services{
+    margin: 30px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    width: 800px;
+    height: 300px;
+    padding: 15px 27px 48px 26px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: #f2f2f2;
+  
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+#services .box p{
+    font-family: cursive;
+}
+
+/*Client section*/
+
+#client-section{
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url(backcli.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px ;
+}
+
+#clients img{
+    height: 130px;
+    border-radius: 15px;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-image: url(contact.jpg);
+    background-size: cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.4rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box form label{
+   font-size: 1.4rem;
+   font-family: Arial, Helvetica, sans-serif;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+ /*ulitity class*/
+
+ .primary{
+     font-family: 'Bree Serif,serif';
+     font-size: 2.4rem;
+     padding: 10px;
+ }
+ .secondary{
+     font-family: 'Bree Serif,serif';
+     font-size: 2.8rem;
+     padding: 12px;
+ }
+ .btn{
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: brown;
+     color: white;
+     margin: 12px 20px;
+     font-size: 1.3rem;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+
+ .center{
+     text-align: center;
+ }
+
+ 
